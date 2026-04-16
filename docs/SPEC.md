@@ -136,6 +136,8 @@ IF transition_pct < 75: FLAG for review — manufacturer must increase action or
 IF offset_pct > 25: REJECT — exceeds maximum offset allowance
 ```
 
+**Staged progression:** The 75% minimum is the entry threshold. Over time, thresholds increase: 75% → 80% → 85% → 90%. This progression incentivises genuine transition and phases out offset reliance. See `greensquares-docs/INDEX.md` § MGS Core Parameters for the authoritative schedule.
+
 ### Step 3: Dimensional scoring
 Each dimension scored 0-100 from product_emissions data. Apply weights from the equivalence engine configuration (already in MCP). Calculate total weighted score.
 
